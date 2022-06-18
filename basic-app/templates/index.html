@@ -1,0 +1,31 @@
+    {% extends 'base/base.html' %}
+    {% block body %}
+    <br><br>
+    <h5 class="my-2 text-center">Inicio de App</h5>
+
+
+    <div class="container my-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">
+                        Correo Electrónico
+                    </label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" 
+                    placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">
+                        Contraseña</label>
+                    <input type="password" class="form-control" id="exampleFormControlTextarea1"/>
+                  </div>
+                  <div class="text-center">
+                    <a class="btn btn-success" href="/main">Iniciar Sesion</a>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    {% endblock %}
+    

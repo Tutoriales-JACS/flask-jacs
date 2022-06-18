@@ -1,0 +1,83 @@
+{% extends 'base/base.html' %}
+{% block body %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand  text-white" href="#">Blog App</a>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="/main">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/productos">Productos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Recursos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Usuarios</a></li>
+              <li><a class="dropdown-item" href="#">Ventas</a></li>
+              <li><a class="dropdown-item" href="#">Compras</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Almacén</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav ">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Usuario
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Mi perfil</a></li>
+                  <li><a class="dropdown-item" href="#">Cambiar Contraseña</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                </ul>
+              </li>
+          </ul>
+      </div>
+    </div>
+</nav>
+
+{% block content_main %}
+<div class="my-2 container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card card-body bg-danger text-white">
+                <h6>Usuarios</h6>
+                <span># 56</span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-body bg-dark text-white">
+                <h6>Ventas</h6>
+                <span># 896</span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-body bg-secondary text-white">
+                <h6>Compras</h6>
+                <span># 56</span>
+            </div>
+        </div>
+    </div>
+   <div class="my-3">
+    <div class="card" style="width: 18rem;">
+        <div class="card-header bg-secondary">
+          Featured
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+      </div>
+   </div>
+</div>
+{% endblock %}
+{% endblock %}
